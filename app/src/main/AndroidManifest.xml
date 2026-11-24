@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.trans">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Trans"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Trans"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="31">
+        <activity
+            android:name=".BookingActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".feedback"
+            android:exported="false" />
+        <activity
+            android:name=".list_cActivity"
+            android:exported="false" />
+        <activity
+            android:name=".VideosActivity"
+            android:exported="false" />
+        <activity
+            android:name=".dr_home"
+            android:exported="false" />
+        <activity
+            android:name=".dr_booking"
+            android:exported="false" />
+        <activity
+            android:name=".dr_list"
+            android:exported="false" />
+        <activity
+            android:name=".dr_activity"
+            android:exported="false" />
+        <activity
+            android:name=".Reg_activity"
+            android:exported="false" />
+        <activity
+            android:name=".login"
+            android:exported="false" />
+        <activity
+            android:name=".user_selection"
+            android:exported="false" />
+        <activity
+            android:name=".taxi_home"
+            android:exported="false"
+            android:theme="@style/Theme.TransN" /> <!-- <activity -->
+        <!-- android:name=".taxi_list" -->
+        <!-- android:exported="false" /> -->
+        <activity
+            android:name=".hospital"
+            android:exported="false" />
+        <activity
+            android:name=".taxiactivity"
+            android:exported="false" /> <!-- <activity -->
+        <!-- android:name=".taxiservice" -->
+        <!-- android:exported="false" /> -->
+        <activity
+            android:name=".Home_activity"
+            android:exported="false"
+            android:label="@string/title_activity_home" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Registration_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".splash_activity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity2"
+            android:exported="false" />
+    </application>
+
+</manifest>

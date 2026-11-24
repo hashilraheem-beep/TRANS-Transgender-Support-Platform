@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Reg_activity"
+    android:orientation="vertical"
+    android:background="@drawable/wall8">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-medium"
+        android:text="REGISTRATION"
+        android:textColor="@color/teal_700"
+        android:textSize="35dp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:padding="20dp"
+        android:layout_marginTop="10dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="75dp"
+        android:layout_marginHorizontal="20dp">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="NAME:"
+            android:layout_marginHorizontal="50dp"
+            android:textColorHint="@color/black"
+            android:textStyle="bold"
+            android:drawableStart="@drawable/ic_baseline_person_24"
+            android:drawablePadding="10dp"
+            android:id="@+id/edtname" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="EMAIL:"
+            android:layout_marginHorizontal="50dp"
+            android:textColorHint="@color/black"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:inputType="textEmailAddress"
+            android:drawableStart="@drawable/ic_baseline_mail_24"
+            android:drawablePadding="10dp"
+            android:id="@+id/edtemail"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="HOSPITAL:"
+            android:layout_marginHorizontal="50dp"
+            android:textColorHint="@color/black"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:inputType="text"
+            android:drawableStart="@drawable/ic_baseline_local_hospital_24"
+            android:drawablePadding="10dp"
+            android:id="@+id/edthospital"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="PHONE:"
+            android:layout_marginHorizontal="50dp"
+            android:textColorHint="@color/black"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:inputType="phone"
+            android:drawableStart="@drawable/ic_baseline_local_phone_24"
+            android:drawablePadding="10dp"
+            android:id="@+id/edtphone"/>
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_marginHorizontal="50dp"
+            android:layout_height="40dp"
+            android:id="@+id/type"
+            android:textStyle="bold"
+            android:singleLine="true"
+            android:layout_marginTop="10dp"
+            android:drawablePadding="10dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="PASSWORD"
+            android:layout_marginHorizontal="50dp"
+            android:textColorHint="@color/black"
+            android:textStyle="bold"
+            android:singleLine="true"
+            android:layout_marginTop="10dp"
+            android:inputType="textPassword"
+            android:drawableStart="@drawable/ic_baseline_lock_24"
+            android:drawablePadding="10dp"
+            android:id="@+id/edtpassword"/>
+
+
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="25dp"
+            android:layout_marginTop="80dp"
+            android:text="UPLOAD FILE"
+            android:background="@color/teal_700"
+            android:textStyle="bold"
+            android:id="@+id/REGISTER"
+            />
+    </LinearLayout>
+</LinearLayout>
